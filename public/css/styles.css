@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+nav{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.5s;
+    text-transform: uppercase;
+    
+}
+nav a {
+    cursor:-moz-zoom-in;
+    
+}
+nav.sticky{
+    background: rgb(18, 39, 147);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+nav .logo{
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    text-shadow: 0 0 5px rgb(3, 45, 255),0 0 3px rgb(52, 145, 117),0 0 15px white,
+    0 0 15px white;
+}
+nav.sticky .logo{
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 5px rgb(30, 14, 254),0 0 3px lightblue,0 0 15px white,
+    0 0 15px white;
+}
+nav .logo span{
+    color: #0188ff;
+}
+nav .navigation{
+    position: relative;
+    display: flex;
+}
+nav .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+nav .navigation li a{
+    text-decoration: none;
+    color: rgb(250, 247, 247);
+    font-weight: bold;
+    text-shadow: 0 0 5px rgb(30, 14, 254),0 0 3px rgb(52, 145, 117),0 0 15px white,
+    0 0 15px white;
+
+}
+nav.sticky .navigation li a{
+    color: rgb(15, 14, 14);
+    
+}
+nav .navigation li a:hover{
+    color:  rgb(127, 247, 6);
+}
+
+.logo{
+
+    margin-right: 2.5%;
+
+}
+
+.Codesign1{
+
+    color:rgb(182, 235, 244);
+    text-shadow:0 0 20px white, 0 0 15px rgb(8, 8, 8), 0 0 10px white, 0 0 20px rgb(10, 9, 9);
+    font-size: 4rem;
+    width: 100%;
+    justify-content: center;
+    
+    }
+    
+.agency{
+        color:rgb(105, 239, 75);
+        font-size: 1.2rem;
+        text-shadow: 0 0 10px white, 0 0 10px rgb(8, 8, 8), 0 0 20px white, 0 0 10px rgb(10, 9, 9);
+        text-align: center;
+       
+       
+    }
+    
+.signo{
+    
+        color: rgb(127, 247, 6);
+        font-size: 2.5rem;
+        text-shadow: 0 0 5px black, 0 0 10px white, 0 0 20px black, 0 0 30px white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border:solid rgb(218, 7, 233);
+        box-shadow: 0 0 3px white, 0 0 5px rgb(254, 2, 178), 0 0 10px white, 0 0 20px white;
+        max-width: 25%;
+        margin-left: auto;
+        margin-right: auto;
+    
+    
+    }
+    
+
+
+.fondo{
+    background: rgba(0, 0, 0, 0.797);
+}
+
+.imagenPrincipal {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../imgs/imagen.png);
+    background-size: cover;
+    
+}
+
+.tituloNos {
+    position: absolute;
+    width:60%;
+    height: 20%;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 3.0em;
+    font-weight: bold;
+    text-align: center;
+    left: 38.5%;
+    top: 12%;
+    margin-top: 44%;
+    text-shadow: 0 0 5px rgb(3, 45, 255),0 0 3px lightblue,0 0 15px white,
+    0 0 15px rgb(3, 45, 255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+
+  
+}
+
+.imagenNos{
+      
+    height: 65%;
+    width: 50%;
+    margin-left: 8%;
+    display: flex;
+    margin-left: auto;
+    margin-top: 11%;
+    margin-right:4%;
+    
+  
+}
+
+.textoNos{
+    font-size: 0.8rem;
+    line-height:2.2rem;
+    position: absolute;
+    color: rgb(249, 249, 249);
+    right: 10%;
+    top: 110%;
+    width: 35%;
+    margin-right:50%;
+    margin-top: 6%;
+    text-transform:inherit;
+    display:flex;
+    font-weight: bold;
+   
+   
+    
+  
+}
+
+
+.neon{
+    text-shadow: 0 0 10px rgb(84, 241, 81), 0 0 5px rgb(211, 209, 209),
+    0 0 10px white, 0 0 10px rgb(23, 58, 23);
+}
+
+
+.tituloSer{
+
+    position: absolute;
+    width:60%;
+    height: 20%;
+    display: flex;
+    color: rgb(0, 0, 0);
+    font-size: 3.0em;
+    font-weight: bold;
+    text-align: center;
+    left: 32%;
+    top:50%;
+    margin-top: 70%;
+    text-shadow: 0 0 5px rgb(3, 45, 255),0 0 3px lightblue,0 0 15px white,
+    0 0 15px rgb(3, 45, 255);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+
+}
+
+.textoServicios{
+   font-size:1.1rem;
+    padding:10%;
+    top:10%;
+    margin-top:40%;
+    width: 100%;
+    text-align: center;
+    padding: 40px;
+    position: absolute;
+    
+
+}
+
+.casilleroUno{
+   
+    color:white;
+    margin-right:10px;
+    width:20%;
+    position: absolute;
+    top:90%;
+    margin-top:55%;
+    padding: 10px;
+    box-shadow:0 0 5px white,0 0 3px white,0 0 10px white,0 0 20px white;
+
+
+
+}
+
+.casilleroDos{
+    
+    color:white;
+    margin-left:30%;
+    width:20%;
+    position: absolute;
+    top:90%;
+    margin-top:55%;
+    padding: 10px;
+    box-shadow:0 0 5px white,0 0 3px white,0 0 10px white,0 0 20px white;
+
+}
+
+
+.casilleroTres{
+    color:white;
+    margin-right:10px;
+    width:20%;
+    position: absolute;
+    top:90%;
+    margin-top:55%;
+    padding: 10px;
+    margin-left:60%;
+    box-shadow:0 0 5px white,0 0 3px white,0 0 10px white,0 0 20px white;
+    
+}
+
+
+
+
+
+
+@media screen and (max-width: 960px) {
+    nav,
+    nav.sticky {
+        padding: 10px 20px;
+    }
+    nav .navigation{
+        display: none;
+    }
+    nav .navigation.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    nav .navigation li{
+        margin-left: 0;
+    }
+    nav .navigation li a{
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(../imgs/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(../imgs/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    nav.sticky .menuToggle{
+        filter: invert(1);  
+    }
+}
+
+
+
+
+
+
+

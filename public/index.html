@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codesign</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="fondo">
+
+  <!--barra de navegacion --> 
+    <nav>
+        <a onclick="toggleMenu();" class="logo">Codesign ></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation">
+            <li><a href="#banner" onclick="toggleMenu();"> Home > </a></li>
+            <li><a href="#about" onclick="toggleMenu();"> Nosotros > </a></li>
+            <li><a href="#expert" onclick="toggleMenu();"> Servicios > </a></li>
+            <li><a href="#testimonials" onclick="toggleMenu();"> Proyecto > </a></li>
+            <li><a href="#testimonials" onclick="toggleMenu();"> Contacto > </a></li>           
+        </ul>
+    </nav>
+
+<!-- imagen(logo) --> 
+    <section class="imagenPrincipal" id="imagenPrincipal">
+        <div class="logo">
+            <span class="signo"id="codesign-logo"></span>      
+            <h1 class="Codesign1" >Codesign</h1>
+            <p class="agency" style="font-weight: bold" >Agencia de desarrollo digital</p>
+        </div>
+    </section>
+
+<!--imagen y parrafo sobre nosotros -->
+    <section> 
+        <h1 class="tituloNos">Nosotros ></h1>          
+        <img class="imagenNos" style="border:solid 3px rgba(56, 56, 56, 0.943)" src= "/imgs/nosotros2.png" />
+        <p class="textoNos"> 
+       "Somos un equipo dedicado pura y exclusivamente al desarrollo y diseño web.
+
+        Nuestro equipo de expertos se enfoca en la satisfacción del cliente.
+        El trabajo es en conjunto "Codesigne/Cliente" para obtener resultados optimos,
+         y asi brindar un excelente servicio.
+
+        Desarrollamos páginas web centradas en personificar tu marca,
+        ofreciendo soluciones web de primera calidad para empresas 
+        que buscan un excelente tiempo de respuesta.
+        
+        Nuestros diseños y desarrollos web aseguran una experiencia digital atractiva 
+        para que tu negocio conecte con las personas."
+        </p>
+    </section>
+
+    <!--imagen y parrafo sobre servicios -->
+    <section>
+        <h1 class="tituloSer">Servicios ></h1>        
+        <div class="textoServicios">
+        <div class="casilleroUno">
+              <h3 class="neon">Diseño y Programación de Paginas Web</h3>
+
+                <p>Paginas web de calidad, con diseño adaptable a cualquier plataforma y
+                     con una estructura apta para lograr un posicionamiento óptimo en los buscadores.</p> 
+        </div>
+            
+        <div class="casilleroDos">
+                <h3 class="neon">Diseño Sitios Web Móviles Responsive</h3>
+
+                <p>Sitios web responsive compatibles con smartphones como Iphone, Android y similares, y tablets.
+                     Paginas optimizadas para mejorar la navegabilidad del usuario.
+                </p>
+                
+        </div>
+            
+        <div class="casilleroTres">
+                <h3 class="neon">Diseño Gráfico / Identidad Corporativa</h3>
+                <p>Diseño de logo y marca de tu empresa, Slogan publicitario y Evaluación de impacto visual.
+                    Se combina el gusto del cliente con nuestro aporte profesional.
+                </p>
+                
+        </div>
+    </div>      
+        
+    </section>
+  
+
+
+
+
+
+
+    <script>
+        const nav = document.querySelector('nav');
+        const menuToggle = document.querySelector('.menuToggle');
+        const navigation = document.querySelector('.navigation');
+        navigation.onwheel = () => false;
+        navigation.ontouchmove = () => false;
+        menuToggle.onwheel = () => false;
+        menuToggle.ontouchmove = () => false;
+        let scrollPosition = 0;
+
+        const codesignLogo = document.querySelector('#codesign-logo');
+        codesignLogo.textContent = '</>'
+
+        window.addEventListener('scroll', function() {  
+            scrollPosition = window.scrollY;
+            nav.classList.toggle('sticky', scrollPosition > 0);
+        })
+
+        window.addEventListener('resize', function(e) {
+            if(navigation.classList.contains('active')){
+                if(window.innerWidth > 991){       
+                    menuToggle.classList.remove('active');
+                    navigation.classList.remove('active');
+                    if (scrollPosition <= 10){
+                        navigation.classList.remove('sticky');
+                        nav.classList.remove('sticky');
+                    }
+                }
+            }
+        })
+
+        function toggleMenu(){
+            if (window.innerWidth < 991) {
+                menuToggle.classList.toggle('active');
+                navigation.classList.toggle('active');
+                if (navigation.classList.contains('active')) {
+                    nav.classList.add('sticky');
+                } else {
+                    scrollPosition < 10 ? nav.classList.remove('sticky') : 0;
+                }                  
+            }            
+        }
+    </script>
+
+
+
+
+ 
+</body>
+
+
+
+
+
+
+
